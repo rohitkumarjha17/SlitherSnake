@@ -12,6 +12,54 @@ python main.py
 Server runs on `http://0.0.0.0:8000`
 
 ---
+## How to Run the Project
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+Python 3
+
+pip
+
+### Step 1: Install dependencies
+
+Open a terminal in the project folder and run:
+
+pip install -r requirements.txt
+
+### Step 2: Start the Battlesnake server
+
+Run:
+
+python main.py
+### Step 3: Confirm the server is running
+
+You should see the server start on:
+
+http://0.0.0.0:8000
+
+For local testing in your browser, use:
+
+http://localhost:8000
+### Step 4: Connect it to Battlesnake
+
+If you want to use it on the Battlesnake platform, your server must be publicly accessible.
+
+You can do that by deploying it to a hosting platform like Render, Railway, Replit, or a VPS, or by exposing your local server using a tunneling tool like ngrok.
+
+Example with ngrok:
+
+ngrok http 8000
+
+This will generate a public URL. Use that URL when registering your snake on play.battlesnake.com.
+
+### Step 5: Register your snake
+
+Go to play.battlesnake.com, create a new snake, and paste your public server URL there.
+
+Once connected, Battlesnake will call your API endpoints automatically during games.
+---
 
 ## Algorithm Overview
 
